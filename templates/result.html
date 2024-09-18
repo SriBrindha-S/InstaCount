@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('Static', filename='css/styles.css') }}">
+    <title>Inference Result</title>
+</head>
+<body>
+    <h1>Inference Result</h1>
+    <div>
+        <h2>Uploaded File</h2>
+        <img src="{{ url_for('uploaded_file', filename=filename) }}" alt="Uploaded File">
+    </div>
+    <div>
+        <h2>Result</h2>
+        <pre>{{ result | tojson }}</pre>
+    </div>
+    <a href="{{ url_for('index') }}">Go Back</a>
+</body>
+</html>

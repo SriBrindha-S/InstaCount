@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('Static', filename='css/styles.css') }}">
+    <title>Roboflow Inference</title>
+</head>
+<body>
+    <h1>Upload Image or Video for Inference</h1>
+    <form method="post" action="/upload_image" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <button type="submit">Upload Image</button>
+    </form>
+    <form method="post" action="/upload_video" enctype="multipart/form-data">
+        <input type="file" name="file" accept="video/*">
+        <button type="submit">Upload Video</button>
+    </form>
+</body>
+</html>
