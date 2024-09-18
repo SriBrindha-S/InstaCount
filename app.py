@@ -6,7 +6,7 @@ from inference_sdk import InferenceHTTPClient
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'Static/uploads'
 app.config['ALLOWED_EXTENSIONS'] = {'png', 'jpg', 'jpeg', 'gif', 'mp4', 'mov', 'avi'}
-api_key = "BmMMnG8NTZJK8ATR3dfh"
+api_key = "Your_API_key"
 rf = Roboflow(api_key=api_key)
 project = rf.workspace("construction-goods-counter-akffd").project("material-counter")
 image_model_version = project.version(17)
