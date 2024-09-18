@@ -63,11 +63,7 @@ pip install -r requirements.txt
 ### 4. Set Up Roboflow API
 
 - Create an account on [Roboflow](https://roboflow.com/) and obtain an API key.
-- Set the API key in the `app.py` file:
-
-```python
-api_key = "YOUR_ROBOFLOW_API_KEY"
-```
+- Set the API key in the `app.py`
 
 ### 5. Run the Application
 
