@@ -1,4 +1,4 @@
-# InstaCount
+# Eyesite
 ML-based construction material counter for efficient resource management using YOLOv8 with Roboflow
 Here's a README template for your project, which covers the essential details of your Flask web application for image and video inference using Roboflow.
 ![WhatsApp Image 2024-09-23 at 11 47 10 AM](https://github.com/user-attachments/assets/2bd391be-80d1-4d39-8550-811b821a91ee)
